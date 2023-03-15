@@ -35,27 +35,9 @@ class ProductManagerTest {
     }
 
     @Test
-    void findProductBySmartphoneManufacturer() {
-
-        Product[] expected = {smartphone};
-        Product[] actual = manager.searchBy("Apple");
-
-        Assertions.assertArrayEquals(expected, actual);
-
-    }
-
-    @Test
     void findProductByBookName() {
         Product[] expected = {book};
         Product[] actual = manager.searchBy("Master");
-
-        Assertions.assertArrayEquals(expected, actual);
-    }
-
-    @Test
-    void findProductByBookAuthor() {
-        Product[] expected = {book};
-        Product[] actual = manager.searchBy("Bernard");
 
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -71,3 +53,20 @@ class ProductManagerTest {
 
     }
 }
+
+//    @Test
+//    void findProductBySmartphoneManufacturer() {
+//
+//        Product[] expected = {smartphone};
+//        Product[] actual = manager.searchBy("Apple");
+//
+//        Assertions.assertArrayEquals(expected, actual);
+//
+//
+//        @Test
+//        void findProductByBookAuthor() {
+//            Product[] expected = {book};
+//            Product[] actual = manager.searchBy("Bernard");
+//
+//            Assertions.assertArrayEquals(expected, actual);
+//        }
